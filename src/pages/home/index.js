@@ -38,7 +38,7 @@ class Home extends Component {
 	}
 	
 	componentWillReceiveProps(nextProps){
-		if (nextProps.location.pathname !== this.props.location.pathname) {
+		if (nextProps.location.pathname !== this.props.location.pathname && !nextProps.match.params.key) {
 		this.props.getTagPosts(nextProps.match.params.id)
 		}
 	}
