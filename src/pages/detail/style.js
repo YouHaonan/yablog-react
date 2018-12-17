@@ -33,9 +33,25 @@ export const Edit = styled.div`
 `;
 
 export const Content = styled.div`
-	color: ##2f2f2f;
+	color: #666;
 	min-height:200px;
 	line-height:20px;
+	ul{
+		padding-left:20px;
+		list-style:disc;
+	}
+
+	ol{
+		padding-left:20px;
+		list-style:decimal;
+	}
+	pre{
+		margin:15px 0;
+		padding:15px;
+		box-sizing: border-box;
+		background:#f1f2f3;
+		border-radius:4px;
+	}
 	p{
 		min-height:16px;
 		white-space:pre-wrap;
