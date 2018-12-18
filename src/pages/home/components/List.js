@@ -49,7 +49,9 @@ const List=(props)=>{
 									</div>
 									:''}
 								</ListAddition>
-								<p className='body'>{delHtmlTag(item.get('body')).substr(0,256)+'...'}</p>
+								<p className='body'
+								dangerouslySetInnerHTML={{__html:delHtmlTag(item.get('body')).substr(0,256)+'...'}} 
+								/>
 							</ListInfo>
 						</ListItem>		
 					)}
