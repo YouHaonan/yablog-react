@@ -49,6 +49,7 @@ class Home extends Component {
 
 	componentWillUnmount() {
 		window.removeEventListener('scroll', this.props.handleFixSideBar);
+		this.props.clearFixed()
     }
 
 }
@@ -97,6 +98,9 @@ const mapDispatch = (dispatch) => ({
 
 	logOut(){
 		dispatch(logActionCreators.logout())
+	},
+	clearFixed(){
+		dispatch(actionCreators.clearFixed())
 	}
 
 });

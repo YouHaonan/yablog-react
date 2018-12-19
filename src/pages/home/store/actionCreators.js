@@ -132,6 +132,10 @@ export const toggleFixedSide = (fixed) => ({
 	fixed
 })
 
+export const clearFixed = () => ({
+	type: constants.CLEAR_FIXED
+})
+
 export const deletePost = (postID, tagID) =>{
 	return(dispatch,getState) =>{
 		axios({

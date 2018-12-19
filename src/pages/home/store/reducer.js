@@ -58,6 +58,8 @@ export default (state = defaultState, action) => {
 			return changeTags(state, action)
 		case constants.CHANGE_TAG_POSTS:
 			return changeTagPosts(state, action)
+		case constants.CLEAR_FIXED:
+			return state.set('fixedSideBar',false)
 		default:
 			return state;
 	}
